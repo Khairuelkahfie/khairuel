@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>data</title>
+  <!-- responsiv -->
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- css bostrap -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- css fontawsoe -->
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+  <style type="text/css">
+    section{
+      font-family: "Comic Sans MS", cursive;
+    }
+    .carousel-inner{
+      height: 400px;
+    }
+  </style>
+
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fa  fa-home fa-2x"></i>E-mukim</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Map</a>
+          </li>
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              User
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Log in</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- akhir navbar -->
+
+
+<div class="container">
+<h4>Data</h4>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Datap')">Data Penerimaan</button>
+  <button class="tablinks" onclick="openCity(event, 'Datad')">Data Desa</button>
+</div>
+
+<div id="Datap" class="tabcontent">
+  <button type="button" class="btn btn-secondary">Tambah</button>
+  <table class="pt-3">
+  <tr>
+    <th>No</th>
+    <th>Nama</th>
+    <th>Tanggal</th>
+    <th>no KTP</th>
+    <th>alamat tinggal</th>
+    <th>desa</th>
+    <th>kecamatan</th>
+    <th>aksi</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Alfreds</td>
+    <td>07-06-2010</td>
+    <td>5023333333333</td>
+    <td>bun owah</td>
+    <td>pengenjek</td>
+    <td>pringgarata</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>nurilah</td>
+    <td>03-06-2012</td>
+    <td>502332233</td>
+    <td>bun owah</td>
+    <td>pengenjek</td>
+    <td>pringgarata</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>enah</td>
+    <td>07-06-2010</td>
+    <td>5023333333333</td>
+    <td>bun owah</td>
+    <td>pengenjek</td>
+    <td>pringgarata</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>salmah</td>
+    <td>07-06-2010</td>
+    <td>5025223323333</td>
+    <td>bun owah</td>
+    <td>pengenjek</td>
+    <td>pringgarata</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+ 
+
+</table>
+
+</div>
+
+<div id="Datad" class="tabcontent">
+ <button type="button" class="btn btn-secondary">Tambah</button>
+  <table>
+  <tr>
+    <th>No</th>
+    <th>Kode Desa</th>
+    <th>Nama Desa</th>
+    <th>Kecamatan</th>
+    <th>aksi</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1001</td>
+    <td>praya</td>
+    <td>praya</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1002</td>
+    <td>leneng</td>
+    <td>praya</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1003</td>
+    <td>gerunung</td>
+    <td>praya</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1004</td>
+    <td>semoyan</td>
+    <td>praya</td>
+    <td><i class="fa  fa-trash fa-1x"></i> <i class="fa  fa-edit fa-1x"></i></td>
+  </tr>
+  </table>
+
+</div>
+</div>
+<footer class="bg-dark text-white sticky-top">
+      <div class="container">
+        <div class="row pt-3">
+          <div class="col text-center">
+            <p>
+              Copyright_Khairuel@2018.
+            </p>
+          </div>
+        </div>
+      </div>
+</footer>
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html> 
